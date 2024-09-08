@@ -1,0 +1,22 @@
+/* Add this CSS in your styles file (e.g., App.css) */
+.ribbon {
+    position: fixed;
+    width: 10px;
+    height: 40px;
+    top: -100px;
+    opacity: 0;
+    animation: fall 1s ease-in forwards; /* Animation lasts for 3 seconds */
+    transform: rotate(45deg);
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -100px;
+      opacity: 1;
+    }
+    100% {
+      top: 100vh; /* Moves from the top of the screen to the bottom */
+      opacity: 0;
+      transform: rotate(720deg);
+    }
+  }
