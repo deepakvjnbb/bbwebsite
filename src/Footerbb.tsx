@@ -28,9 +28,9 @@ import { faLinkedin,faGithub,faYoutube,faDiscord } from '@fortawesome/free-brand
           </div>
           </div>
           <div className="mt-8 md:order-1 md:mt-0">
-            <p className="text-center font-semibold text-md leading-5 text-gray-200">
-              &copy; 2024 Backbench Company. All rights reserved.
-            </p>
+          <p className="text-center font-semibold text-sm sm:text-md md:text-lg lg:text-xl leading-4 sm:leading-5 md:leading-6 lg:leading-7 text-gray-200">
+  &copy; 2024 Backbench Company. All rights reserved.
+</p>
           </div>
         </div>
       </footer>
