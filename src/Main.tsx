@@ -47,7 +47,7 @@ return(
     </div>
   </nav>
   <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
-    Craving for the latest in innovation?
+    Craving for the latest in innovation.?
   </h1>
 </ParallaxSection>
 
