@@ -6,7 +6,7 @@ const ParallaxSection: React.FC<{ backgroundImage: string; children: React.React
     return (
       <div
       
-        className="relative h-screen bg-fixed bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
