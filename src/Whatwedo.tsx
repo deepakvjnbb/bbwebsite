@@ -193,8 +193,8 @@ export default function Whatwedo() {
                   type="submit"
                   
                 //   onClick={handleClick}
-                  className="rounded-md bg-orange-700 px-6 py-3 text-center text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
+                className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
                   Submit and Let’s move ahead
                 </button>
                 <p className="mt-4 text-base leading-6 text-gray-500 ">

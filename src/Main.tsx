@@ -52,32 +52,32 @@ return(
 </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic9.jpg">
-        <h1 className="text-5xl text-white font-bold p-6">Looking for sleek, cutting-edge designs?</h1>
+        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">Looking for sleek, cutting-edge designs?</h1>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic8.jpg">
-        <h1 className="text-5xl text-white font-bold p-6">Wanting something effortless and user-friendly?</h1>
+        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">Wanting something effortless and user-friendly?</h1>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic5.jpg">
-        <h1 className="text-5xl text-white font-bold p-6">Seeking both striking and dependable solutions?</h1>
+        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">Seeking both striking and dependable solutions?</h1>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic3.jpg">
-        <h1 className="text-5xl text-white font-bold p-6">Desiring great value without compromise?
+        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">Desiring great value without compromise?
 </h1>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic7.jpg">
         <div className="flex flex-col items-center justify-center h-full text-start">
-          <h1 className="text-5xl text-white font-bold p-6">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
             We are not fashion people, We are software developers.<br /> We are Backbench Company.
           </h1>
           <div className="mt-8">
             <button
               type="submit"
               onClick={toggleWhatwedoSection}
-              className="rounded-md bg-orange-700 px-6 py-3 text-center text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             
             >  
               For business enquiries and more click here. 
@@ -100,9 +100,8 @@ return(
                 <div>
                   <button 
                   onClick={hideWhatwedoSection}
-                  className="rounded-md bg-orange-700 px-6 py-3 mb-12 text-center text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-
+                  className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+>
                 Go Back 
                 </button>
                 </div>
