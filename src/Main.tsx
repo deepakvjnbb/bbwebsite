@@ -38,17 +38,18 @@ const Main: React.FC = () => {
 return(
     <div>
 <ParallaxSection backgroundImage="/images/pic1.jpg">
-<nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8 ">
-      <div className="p-1.5">
-        <a href="#">
-          <span className="sr-only">Your Company</span>
-          <img alt="Company Logo" src={bblogo1} className="h-28 w-auto" />
-        </a>
-      </div>
-    </nav>
-        <h1 className="text-5xl text-white font-bold p-6">Craving for the latest in innovation?
-</h1>
-      </ParallaxSection>
+  <nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8">
+    <div className=" top-4 left-4 p-1.5">
+      <a href="#">
+        <span className="sr-only">Your Company</span>
+        <img alt="Company Logo" src={bblogo1} className="h-16 md:h-20 lg:h-24 w-auto" />
+      </a>
+    </div>
+  </nav>
+  <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
+    Craving for the latest in innovation?
+  </h1>
+</ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic9.jpg">
         <h1 className="text-5xl text-white font-bold p-6">Looking for sleek, cutting-edge designs?</h1>
