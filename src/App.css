@@ -38,3 +38,16 @@
     transform: rotate(360deg);
   }
 }
+/* Apply parallax effect only on large screens */
+@media (min-width: 768px) {
+  .parallax-section {
+    background-attachment: fixed;
+  }
+}
+
+/* Disable parallax effect on smaller screens */
+@media (max-width: 767px) {
+  .parallax-section {
+    background-attachment: scroll; /* Or remove background-attachment */
+  }
+}
