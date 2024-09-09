@@ -78,7 +78,6 @@ return(
               type="submit"
               onClick={toggleWhatwedoSection}
               className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            
             >  
               For business enquiries and more click here. 
               {/* <FontAwesomeIcon icon={faArrowPointer} className="mr-2 ml-2" /> */}

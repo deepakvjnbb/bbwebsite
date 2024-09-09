@@ -1,20 +1,24 @@
-const ParallaxSection: React.FC<{ backgroundImage: string; children: React.ReactNode }> = ({
-    backgroundImage,
-    children,
-  }) => {
-    
-    return (
-      <div
-      
-        className="relative w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-        }}
-      >
-        {children}
-      </div>
-    );
-  };
-export default ParallaxSection;
+import React from 'react';
 
-{/* <div className="relative isolate overflow-hidden" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}> */}
+interface ParallaxSectionProps {
+  backgroundImage: string;
+  children: React.ReactNode;
+}
+
+const ParallaxSection: React.FC<ParallaxSectionProps> = ({ backgroundImage, children }) => {
+  return (
+    <section
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+      className="relative h-screen flex flex-col justify-center items-center text-center"
+    >
+      {children}
+    </section>
+  );
+};
+
+export default ParallaxSection;
