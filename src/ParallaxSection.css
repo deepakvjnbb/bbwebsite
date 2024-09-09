@@ -1,0 +1,7 @@
+/* Apply full-screen height and relative positioning for the parallax section */
+.parallax-section {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }

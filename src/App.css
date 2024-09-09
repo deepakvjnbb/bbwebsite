@@ -38,16 +38,10 @@
     transform: rotate(360deg);
   }
 }
-/* Apply parallax effect only on large screens */
-@media (min-width: 768px) {
-  .parallax-section {
-    background-attachment: fixed;
-  }
-}
-
-/* Disable parallax effect on smaller screens */
-@media (max-width: 767px) {
-  .parallax-section {
-    background-attachment: scroll; /* Or remove background-attachment */
-  }
+/* Apply full-screen height and relative positioning for the parallax section */
+.parallax-section {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
