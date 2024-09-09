@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .App-logo {
   height: 40vmin;
@@ -39,9 +44,20 @@
   }
 }
 /* Apply full-screen height and relative positioning for the parallax section */
-.parallax-section {
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: center;
+
+@media (max-width: 768px) {
+  .react-parallax-bgimage {
+    background-attachment: scroll !important; /* Disable fixed backgrounds on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .parallax-section {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
 }
