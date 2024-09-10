@@ -6,16 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Prevent horizontal overflow on the body */
+
+/* Global styles */
 html, body {
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Smooth scrolling for touch devices like iOS */
-.scrollable-content {
+/* Ensuring smooth scrolling */
+.scroll-container {
   -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
