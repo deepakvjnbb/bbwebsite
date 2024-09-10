@@ -3,6 +3,8 @@ import ParallaxSection from './ParallaxSection';
 import bblogo1 from './photos/bbtrslogo4444C.png';
 import Whatwedo from './Whatwedo';
 import RibbonFalling from './RibbonFalling';
+import './App.css'; // Ensure the path is correct
+
 
 const Main: React.FC = () => {
   const [showWhatwedo, setShowWhatwedo] = useState<boolean>(false);
@@ -30,10 +32,8 @@ const Main: React.FC = () => {
 
   return (
     <div className="m-0 p-0">
-  <ParallaxSection
-  mobileImage="/images/pic1a.jpg"
-  desktopImage="/images/pic1.jpg"
->
+ 
+ <ParallaxSection imageClass="pic1">
   <nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8">
     <div className="flex top-4 left-4 p-1.5">
       <a href="#">
@@ -49,10 +49,8 @@ const Main: React.FC = () => {
   </div>
 </ParallaxSection>
 
-<ParallaxSection
-  mobileImage="/images/pic9a.jpg"
-  desktopImage="/images/pic9.jpg"
->
+
+<ParallaxSection  imageClass='pic9'>
   <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
     <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
       Looking for sleek, cutting-edge designs?
@@ -60,9 +58,8 @@ const Main: React.FC = () => {
   </div>
 </ParallaxSection>
 
-      <ParallaxSection   
-      mobileImage="/images/pic8a.jpg"
-      desktopImage="/images/pic8.jpg">
+    
+<ParallaxSection  imageClass='pic8'>
       {/* <div className="flex justify-center items-center w-full h-screen">  */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
@@ -71,10 +68,8 @@ const Main: React.FC = () => {
         </div>
       </ParallaxSection>
 
-      <ParallaxSection 
-        mobileImage="/images/pic5a.jpg"
-        desktopImage="/images/pic5.jpg"
-        >
+      
+      <ParallaxSection  imageClass='pic5'>
       {/* <div className="flex justify-center items-center w-full h-screen">  */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
@@ -83,9 +78,7 @@ const Main: React.FC = () => {
         </div>
       </ParallaxSection>
 
-      <ParallaxSection   
-      mobileImage="/images/pic3a.jpg"
-      desktopImage="/images/pic3.jpg">
+      <ParallaxSection  imageClass='pic3'>
       {/* <div className="flex justify-center items-center w-full h-screen">  */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
@@ -94,9 +87,8 @@ const Main: React.FC = () => {
       </div>
       </ParallaxSection>
 
-      <ParallaxSection   
-      mobileImage="/images/pic7a.jpg"
-      desktopImage="/images/pic7.jpg">
+      
+      <ParallaxSection  imageClass='pic7'>
   {/* <div className="flex flex-col justify-center items-center w-full min-h-screen p-6">  */}
   <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
     <h1 className="text-4xl md:text-5xl xl:text-6xl text-white font-bold">

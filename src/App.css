@@ -9,6 +9,7 @@ html, body {
   overflow-y: auto;
 }
 
+
 .App {
   text-align: center;
   margin: 0;
@@ -54,21 +55,53 @@ html, body {
     transform: rotate(360deg);
   }
 }
-/* Apply full-screen height and relative positioning for the parallax section */
-
-/* @media (max-width: 768px) {
-  .react-parallax-bgimage {
-    background-attachment: scroll !important; /* Disable fixed backgrounds on mobile */
-  /* }
+/* Base styles for the parallax container */
+.parallax-container {
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
 }
 
-@media (min-width: 769px) {
-  .parallax-section {
-    background-attachment: fixed;
+/* Mobile images */
+@media (max-width: 767px) {
+  .parallax-container.pic1 {
+    background-image: url('/src/images/pic1a.jpg'); 
+  }
+  .parallax-container.pic9 {
+    background-image: url('/src/images/pic9a.jpg');
+  }
+  .parallax-container.pic8 {
+    background-image: url('/src/images/pic8a.jpg');
+  }
+  .parallax-container.pic5 {
+    background-image: url('/src/images/pic5a.jpg');
+  }
+  .parallax-container.pic3 {
+    background-image: url('/src/images/pic3a.jpg');
+  }
+  .parallax-container.pic7 {
+    background-image: url('/src/images/pic7a.jpg');
+  }
+
+}
+
+/* Desktop images */
+@media (min-width: 768px) {
+  .parallax-container.pic1 {
+    background-image: url('/src/images/pic1.jpg');
+  }
+  .parallax-container.pic9 {
+    background-image: url('/src/images/pic9.jpg');
+  }
+  .parallax-container.pic8 {
+    background-image: url('/src/images/pic8.jpg');
+  }
+  .parallax-container.pic5 {
+    background-image: url('/src/images/pic5.jpg');
+  }
+  .parallax-container.pic3 {
+    background-image: url('/src/images/pic3.jpg');
+  }
+  .parallax-container.pic7 {
+    background-image: url('/src/images/pic7.jpg');
   }
 }
-@media (max-width: 768px) {
-  .parallax-section {
-    background-attachment: scroll;
-  }
-} */
