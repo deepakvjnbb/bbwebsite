@@ -254,20 +254,20 @@ export default function Whatwedo() {
           <div className="fixed inset-0 bg-black opacity-50"></div> {/* Background overlay */}
           <div
             className={`bg-white p-6 rounded-lg shadow-lg z-10 relative w-80 transition-transform duration-300 ease-in-out 
-            ${isError ? 'border-red-500 text-red-700' : 'border-green-500 text-green-700'}`}
+            ${isError ? 'border-red-500 text-red-700' : 'border-orange-500 text-orange-700'}`}
           >
             <div className="flex items-center space-x-2">
               {isError ? (
-                <FontAwesomeIcon icon={faTimesCircle} className="w-6 h-6 text-red-500" />
+                <FontAwesomeIcon icon={faTimesCircle} className="w-6 h-6 text-red-700" />
               ) : (
-                <FontAwesomeIcon icon={faCheckCircle} className="w-6 h-6 text-green-500" />
+                <FontAwesomeIcon icon={faCheckCircle} className="w-6 h-6 text-orage-500" />
               )}
               <span>{popupMessage}</span>
             </div>
 
             {/* Close button */}
             <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              className="absolute top-2 right-2 text-orange-500 hover:text-orange-700"
               onClick={() => setIsPopupVisible(false)}
             >
               <FontAwesomeIcon icon={faTimes} className="w-4 h-4" />
