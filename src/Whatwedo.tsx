@@ -1,5 +1,4 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import bblogo from './photos/bbtrslogo4444C.png';
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 // import React, { useState } from 'react';
@@ -64,10 +63,10 @@ export default function Whatwedo() {
 
   return (
 
-    <div id="whatwedo-section" className="flex isolate flex-col items-center w-full p-4 sm:p-6 lg:p-8 bg-white">
+    <div id="whatwedo-section" className="flex isolate flex-col items-center mt-10 w-full p-4 sm:p-6 lg:p-8 bg-white">
       <div className=" w-full">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 text-center">Let us know about your project requirement</h2>
-        <p className="mt-6 text-xl leading-8 text-gray-600 text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center">Let us know about your project requirement</h2>
+        <p className="mt-6 text-lg leading-5 text-gray-600 text-center">
           We help businesses and individuals in developing custom software solutions to streamline and optimize their processes. Our tailored approach ensures each solution meets the unique needs of our clients.
         </p>
         <div className="mt-8 flex flex-col lg:flex-row justify-evenly gap-6 lg:gap-8">
@@ -78,7 +77,7 @@ export default function Whatwedo() {
                 {/* Let us know form section */}
                 <div className="mt-4">
                   <label htmlFor="heading" className="block text-xl font-bold leading-6 text-gray-900">
-                    Let us know what you’re looking for:
+                    What you’re looking for:
                   </label>
                   <div className="mt-2.5">
                     <fieldset>
@@ -124,7 +123,7 @@ export default function Whatwedo() {
                 {/* Contact Information Section */}
                 <div className="flex flex-col mt-4">
                   <h3 className="block text-xl font-bold text-gray-900 mb-6">Your Contact Information</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-1">
                     <div className="mb-6">
                       <label htmlFor="first-name" className="block  font-semibold leading-6 text-base text-gray-600">
                         Name
@@ -193,11 +192,11 @@ export default function Whatwedo() {
                   type="submit"
                   
                 //   onClick={handleClick}
-                className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-6 sm:mb-10 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Submit and Let’s move ahead
                 </button>
-                <p className="mt-4 text-base leading-6 text-gray-500 ">
+                <p className=" text-base leading-6 text-gray-500 ">
                   While submitting this form, we assure you that your details will be kept safe and secure{' '}
                   <a href="#" className="font-semibold text-gray-500">
                     privacy policy
@@ -240,10 +239,7 @@ export default function Whatwedo() {
                 </dd>
               </div>
             </dl>
-            <div className='flex flex-col items-center '>
-            <img alt="" src={bblogo} className="h-28 w-auto mb-2 mt-16 ml-10" />
-            {/* <h3 className='leading-2 text-gray-500 text-gray-500 font-bold '>Backbench Company</h3>  */}
-            </div>
+         
           </div>
           </div>
           </div>

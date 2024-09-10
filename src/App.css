@@ -79,11 +79,11 @@ html, body {
   .parallax-container.pic8 {
     background-image: url('/src/images/pic8a.jpg');
   }
-  .parallax-container.pic5 {
-    background-image: url('/src/images/pic5a.jpg');
-  }
   .parallax-container.pic3 {
     background-image: url('/src/images/pic3a.jpg');
+  }
+  .parallax-container.pic5 {
+    background-image: url('/src/images/pic5a.jpg');
   }
   .parallax-container.pic7 {
     background-image: url('/src/images/pic7a.jpg');

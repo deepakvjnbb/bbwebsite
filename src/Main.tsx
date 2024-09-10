@@ -3,6 +3,8 @@ import ParallaxSection from './ParallaxSection';
 import bblogo1 from './photos/bbtrslogo4444C.png';
 import Whatwedo from './Whatwedo';
 import RibbonFalling from './RibbonFalling';
+import bblogo from './photos/bbtrslogo4444C.png';
+
 import './App.css'; // Ensure the path is correct
 
 
@@ -108,15 +110,20 @@ const Main: React.FC = () => {
         <div id="whatwedo-section" ref={whatwedoRef} className="bg-white px-0 py-0">
           <Whatwedo />
           <div className="text-center relative">
-            <div>
-              <button
-                onClick={hideWhatwedoSection}
-                className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Go Back
-              </button>
-            </div>
-          </div>
+  {/* Flex container to center the content horizontally */}
+  <div className='flex flex-col items-center justify-center'> 
+    <img alt="Company Logo" src={bblogo} className="h-28 w-auto mb-8 mt-10" />
+    {/* <h3 className='leading-2 text-gray-500 text-gray-500 font-bold'>Backbench Company</h3> */}
+  </div>
+  <div className="mt-4">
+    <button
+      onClick={hideWhatwedoSection}
+      className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+    >
+      Go Back
+    </button>
+  </div>
+</div>
         </div>
       )}
     </div>
