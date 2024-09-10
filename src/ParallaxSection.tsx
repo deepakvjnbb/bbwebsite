@@ -10,11 +10,18 @@ interface ParallaxSectionProps {
 const ParallaxSection: React.FC<ParallaxSectionProps> = ({ imageClass, children }) => {
   // Dynamically require the background image based on imageClass
   const getImage = (imageClass: string) => {
+    const screenWidth = window.innerWidth;
+    const isMobile = screenWidth <= 767;
+  
     try {
-      return require(`./images/${imageClass}.jpg`);
+      if (isMobile) {
+        return require(`/images/${imageClass}.jpg`);
+      } else {
+        return require(`/images/${imageClass}.jpg`);
+      }
     } catch (error) {
       console.error(`Error loading image for ${imageClass}:`, error);
-      return ''; // Return a fallback or empty string if not found
+      return '';
     }
   };
 
@@ -22,7 +29,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ imageClass, children 
     <Parallax
       bgImage={getImage(imageClass)} // Dynamically set the image
       bgImageAlt="the background"
-      strength={200}
+      strength={300}
       bgImageStyle={{
         objectFit: 'cover',
         width: '100%',
