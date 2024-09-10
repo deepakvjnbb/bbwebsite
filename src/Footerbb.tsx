@@ -5,7 +5,7 @@ import { faLinkedin,faGithub,faYoutube,faDiscord } from '@fortawesome/free-brand
 
   export default function Footerbb() {
     return (
-      <footer className= "bg-gradient-to-r from-gray-600 from-10% via-gray-500 via-60% to-gray-800 to-90% ...">
+      <footer className= "bg-gradient-to-r from-gray-900 from-10% via-black via-60% to-gray-900 to-90% ...">
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
           <div className="mt-6 flex justify-center space-x-10">
