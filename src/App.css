@@ -8,11 +8,15 @@ html, body {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
 }
+
 .parallax-container {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden; /* Prevents flickering */
+  background-attachment: fixed; /* Ensure background is fixed */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repeat */
+  background-size: cover; /* Cover the entire container */
 }
-
 .App {
   text-align: center;
   margin: 0;

@@ -14,11 +14,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ imageClass, children 
     const isMobile = screenWidth <= 767;
   
     try {
-      if (isMobile) {
-        return require(`/images/${imageClass}.jpg`);
-      } else {
-        return require(`/images/${imageClass}.jpg`);
-      }
+      return require(`/src/images/${imageClass}.jpg`);
     } catch (error) {
       console.error(`Error loading image for ${imageClass}:`, error);
       return '';
@@ -29,7 +25,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ imageClass, children 
     <Parallax
       bgImage={getImage(imageClass)} // Dynamically set the image
       bgImageAlt="the background"
-      strength={300}
+      strength={400} // Adjust as needed
       bgImageStyle={{
         objectFit: 'cover',
         width: '100%',
