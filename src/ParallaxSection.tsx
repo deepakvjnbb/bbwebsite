@@ -22,7 +22,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ imageClass, children 
     <Parallax
       bgImage={getImage(imageClass)} // Dynamically set the image
       bgImageAlt="the background"
-      strength={200}
+      strength={100}
       bgImageStyle={{
         objectFit: 'cover',
         width: '100%',
