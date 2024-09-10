@@ -30,35 +30,39 @@ const Main: React.FC = () => {
 
   return (
     <div className="m-0 p-0">
-  <ParallaxSection backgroundImage="/images/pic1.jpg">
-    <nav aria-label="Global" className="fixed top-0 left-0 p-6  lg:px-8">
-      <div className="flex top-4 left-4 p-1.5">
-        <a href="#">
-          <span className="sr-only">Your Company</span>
-          <img alt="Company Logo" src={bblogo1} className="h-16 md:h-20 lg:h-24 w-auto" />
-        </a>
-      </div>
-    </nav>
-    <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
-    {/* <div className="flex justify-center items-center w-full h-screen">  */}
-      {/* Horizontally and vertically center the content */}
-      <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold">
-        Craving for the latest in innovation?
-      </h1>
+  <ParallaxSection
+  mobileImage="/images/pic1a.jpg"
+  desktopImage="/images/pic1.jpg"
+>
+  <nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8">
+    <div className="flex top-4 left-4 p-1.5">
+      <a href="#">
+        <span className="sr-only">Your Company</span>
+        <img alt="Company Logo" src={bblogo1} className="h-16 md:h-20 lg:h-24 w-auto" />
+      </a>
     </div>
-  </ParallaxSection>
+  </nav>
+  <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
+    <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold">
+      Craving for the latest in innovation?
+    </h1>
+  </div>
+</ParallaxSection>
 
-      <ParallaxSection backgroundImage="/images/pic9.jpg">
-      {/* <div className="flex justify-center items-center w-full h-screen">  */}
-      <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
+<ParallaxSection
+  mobileImage="/images/pic9a.jpg"
+  desktopImage="/images/pic9.jpg"
+>
+  <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
+    <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
+      Looking for sleek, cutting-edge designs?
+    </h1>
+  </div>
+</ParallaxSection>
 
-        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
-          Looking for sleek, cutting-edge designs?
-        </h1>
-        </div>
-      </ParallaxSection>
-
-      <ParallaxSection backgroundImage="/images/pic8.jpg">
+      <ParallaxSection   
+      mobileImage="/images/pic8a.jpg"
+      desktopImage="/images/pic8.jpg">
       {/* <div className="flex justify-center items-center w-full h-screen">  */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
@@ -67,7 +71,10 @@ const Main: React.FC = () => {
         </div>
       </ParallaxSection>
 
-      <ParallaxSection backgroundImage="/images/pic5.jpg">
+      <ParallaxSection 
+        mobileImage="/images/pic5a.jpg"
+        desktopImage="/images/pic5.jpg"
+        >
       {/* <div className="flex justify-center items-center w-full h-screen">  */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
@@ -76,7 +83,9 @@ const Main: React.FC = () => {
         </div>
       </ParallaxSection>
 
-      <ParallaxSection backgroundImage="/images/pic3.jpg">
+      <ParallaxSection   
+      mobileImage="/images/pic3a.jpg"
+      desktopImage="/images/pic3.jpg">
       {/* <div className="flex justify-center items-center w-full h-screen">  */}
       <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
@@ -85,7 +94,9 @@ const Main: React.FC = () => {
       </div>
       </ParallaxSection>
 
-      <ParallaxSection backgroundImage="/images/pic7.jpg">
+      <ParallaxSection   
+      mobileImage="/images/pic7a.jpg"
+      desktopImage="/images/pic7.jpg">
   {/* <div className="flex flex-col justify-center items-center w-full min-h-screen p-6">  */}
   <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
     <h1 className="text-4xl md:text-5xl xl:text-6xl text-white font-bold">
