@@ -1,3 +1,14 @@
+/* Prevent horizontal overflow on the body */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for touch devices like iOS */
+.scrollable-content {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
 .App {
   text-align: center;
   margin: 0;
@@ -45,10 +56,10 @@
 }
 /* Apply full-screen height and relative positioning for the parallax section */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .react-parallax-bgimage {
     background-attachment: scroll !important; /* Disable fixed backgrounds on mobile */
-  }
+  /* }
 }
 
 @media (min-width: 769px) {
@@ -60,4 +71,4 @@
   .parallax-section {
     background-attachment: scroll;
   }
-}
+} */

@@ -31,7 +31,7 @@ const Main: React.FC = () => {
   return (
     <div className="m-0 p-0">
   <ParallaxSection backgroundImage="/images/pic1.jpg">
-    <nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8">
+    <nav aria-label="Global" className="fixed top-0 left-0 p-6  lg:px-8">
       <div className="flex top-4 left-4 p-1.5">
         <a href="#">
           <span className="sr-only">Your Company</span>
@@ -39,7 +39,8 @@ const Main: React.FC = () => {
         </a>
       </div>
     </nav>
-    <div className="flex justify-center items-center w-full h-screen"> 
+    <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
+    {/* <div className="flex justify-center items-center w-full h-screen">  */}
       {/* Horizontally and vertically center the content */}
       <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold">
         Craving for the latest in innovation?
@@ -48,7 +49,9 @@ const Main: React.FC = () => {
   </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic9.jpg">
-      <div className="flex justify-center items-center w-full h-screen"> 
+      {/* <div className="flex justify-center items-center w-full h-screen">  */}
+      <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
+
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Looking for sleek, cutting-edge designs?
         </h1>
@@ -56,7 +59,8 @@ const Main: React.FC = () => {
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic8.jpg">
-      <div className="flex justify-center items-center w-full h-screen"> 
+      {/* <div className="flex justify-center items-center w-full h-screen">  */}
+      <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Wanting something effortless and user-friendly?
         </h1>
@@ -64,7 +68,8 @@ const Main: React.FC = () => {
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic5.jpg">
-      <div className="flex justify-center items-center w-full h-screen"> 
+      {/* <div className="flex justify-center items-center w-full h-screen">  */}
+      <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Seeking both striking and dependable solutions?
         </h1>
@@ -72,7 +77,8 @@ const Main: React.FC = () => {
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic3.jpg">
-      <div className="flex justify-center items-center w-full h-screen"> 
+      {/* <div className="flex justify-center items-center w-full h-screen">  */}
+      <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Desiring great value without compromise?
         </h1>
@@ -80,11 +86,11 @@ const Main: React.FC = () => {
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic7.jpg">
-  <div className="flex flex-col justify-center items-center w-full h-screen"> 
-    <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
+  {/* <div className="flex flex-col justify-center items-center w-full min-h-screen p-6">  */}
+  <div className="flex flex-col justify-center items-center w-full min-h-screen overflow-x-hidden p-6"> 
+    <h1 className="text-4xl md:text-5xl xl:text-6xl text-white font-bold">
       We are not fashion people, We are software developers.<br /> We are Backbench Company.
     </h1>
-    {/* Ensure button is inside the flex container, but below the text */}
     <button
       type="submit"
       onClick={toggleWhatwedoSection}
