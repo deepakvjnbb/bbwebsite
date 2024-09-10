@@ -8,7 +8,7 @@ import { faLinkedin,faGithub,faYoutube,faDiscord } from '@fortawesome/free-brand
       <footer className= "bg-gradient-to-r from-gray-600 from-10% via-gray-500 via-60% to-gray-800 to-90% ...">
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
-          <div className="mt-10 flex justify-center space-x-10">
+          <div className="mt-6 flex justify-center space-x-10">
           <a href="https://www.linkedin.com" className="text-gray-200 hover:text-gray-400">
           <span className="sr-only">Linkedin</span>
           <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
@@ -27,7 +27,7 @@ import { faLinkedin,faGithub,faYoutube,faDiscord } from '@fortawesome/free-brand
           </a>
           </div>
           </div>
-          <div className="mt-8 md:order-1 md:mt-0">
+          <div className="mt-4 md:order-1 md:mt-0">
           <p className="text-center font-semibold text-sm sm:text-md md:text-lg lg:text-xl leading-4 sm:leading-5 md:leading-6 lg:leading-7 text-gray-200">
   &copy; 2024 Backbench Company. All rights reserved.
 </p>

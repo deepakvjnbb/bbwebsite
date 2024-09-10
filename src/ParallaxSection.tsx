@@ -11,10 +11,20 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ backgroundImage, chil
     <Parallax
       bgImage={backgroundImage}
       bgImageAlt="the background"
-      strength={300} // Controls the depth of the parallax effect
-      style={{ minHeight: '60vh', margin: 0, padding: 0 }} // Remove margin and padding
+      strength={500}
+      bgImageStyle={{
+        objectFit: 'cover',  // Ensures no stretching and maintains aspect ratio
+        width: '100%',       // Ensures the image covers the full width
+        height: '100%',      // Ensures the image covers the full height
+      }}
+      style={{
+        height: '100vh',     // Makes each section take up the full viewport height
+        width: '100%',       // Ensures the section fills the entire viewport width
+        margin: 0,           // Removes unwanted margin
+        padding: 0,          // Removes unwanted padding
+      }}
     >
-      <div className="flex flex-col justify-center items-center text-center m-0 p-0">
+      <div className="flex flex-col justify-center items-center text-center w-full h-full">
         {children}
       </div>
     </Parallax>

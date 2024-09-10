@@ -30,60 +30,70 @@ const Main: React.FC = () => {
 
   return (
     <div className="m-0 p-0">
-      <ParallaxSection backgroundImage="/images/pic1.jpg">
-        <nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8">
-          <div className=" top-4 left-4 p-1.5">
-            <a href="#">
-              <span className="sr-only">Your Company</span>
-              {/* <img alt="Company Logo" src={bblogo1} className="h-16 md:h-20 lg:h-24 w-auto" /> */}
-            </a>
-          </div>
-        </nav>
-        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
-          Craving for the latest in innovation.?
-        </h1>
-      </ParallaxSection>
+  <ParallaxSection backgroundImage="/images/pic1.jpg">
+    <nav aria-label="Global" className="fixed top-0 left-0 p-6 lg:px-8">
+      <div className="flex top-4 left-4 p-1.5">
+        <a href="#">
+          <span className="sr-only">Your Company</span>
+          <img alt="Company Logo" src={bblogo1} className="h-16 md:h-20 lg:h-24 w-auto" />
+        </a>
+      </div>
+    </nav>
+    <div className="flex justify-center items-center w-full h-screen"> 
+      {/* Horizontally and vertically center the content */}
+      <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold">
+        Craving for the latest in innovation?
+      </h1>
+    </div>
+  </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic9.jpg">
+      <div className="flex justify-center items-center w-full h-screen"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Looking for sleek, cutting-edge designs?
         </h1>
+        </div>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic8.jpg">
+      <div className="flex justify-center items-center w-full h-screen"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Wanting something effortless and user-friendly?
         </h1>
+        </div>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic5.jpg">
+      <div className="flex justify-center items-center w-full h-screen"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Seeking both striking and dependable solutions?
         </h1>
+        </div>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic3.jpg">
+      <div className="flex justify-center items-center w-full h-screen"> 
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
           Desiring great value without compromise?
         </h1>
+      </div>
       </ParallaxSection>
 
       <ParallaxSection backgroundImage="/images/pic7.jpg">
-        <div className="flex flex-col items-center justify-center h-full text-start">
-          <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
-            We are not fashion people, We are software developers.<br /> We are Backbench Company.
-          </h1>
-          <div className="mt-8">
-            <button
-              type="submit"
-              onClick={toggleWhatwedoSection}
-              className="rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 mb-8 sm:mb-12 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              For business enquiries and more click here.
-            </button>
-          </div>
-        </div>
-      </ParallaxSection>
+  <div className="flex flex-col justify-center items-center w-full h-screen"> 
+    <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold p-6">
+      We are not fashion people, We are software developers.<br /> We are Backbench Company.
+    </h1>
+    {/* Ensure button is inside the flex container, but below the text */}
+    <button
+      type="submit"
+      onClick={toggleWhatwedoSection}
+      className="mt-8 rounded-md bg-orange-700 px-4 py-2 sm:px-6 sm:py-3 text-center text-sm sm:text-md font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+    >
+      For business enquiries and more click here.
+    </button>
+  </div>
+</ParallaxSection>
 
       {showWhatwedo && (
         <div id="whatwedo-section" ref={whatwedoRef} className="bg-white px-0 py-0">
