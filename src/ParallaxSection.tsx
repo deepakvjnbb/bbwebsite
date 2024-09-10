@@ -24,7 +24,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({ backgroundImage, chil
         padding: 0,          // Removes unwanted padding
       }}
     >
-      <div className="flex flex-col justify-center items-center text-center w-full h-full">
+      <div className="flex flex-col justify-center items-center text-center w-full h-full overflow-x-hidden">
         {children}
       </div>
     </Parallax>
