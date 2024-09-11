@@ -66,7 +66,7 @@ export default function Whatwedo() {
     <div id="whatwedo-section" className="flex isolate flex-col items-center mt-10 w-full p-4 sm:p-6 lg:p-8 bg-white">
       <div className=" w-full">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center">Let us know about your project requirement</h2>
-        <p className="mt-6 text-lg font-semibold leading-7 text-gray-600 text-center">
+        <p className="mt-6 text-lg  leading-7 text-gray-600 text-center">
           We help businesses and individuals in developing custom software solutions to streamline and optimize their processes. Our tailored approach ensures each solution meets the unique needs of our clients.
         </p>
         <div className="mt-8 flex flex-col lg:flex-row justify-evenly gap-6 lg:gap-8">
